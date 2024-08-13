@@ -70,8 +70,8 @@ public class ChessMatch {
 		this.promoted = promoted;
 	}
 	
-	public ChessPiece[][] getPieces() {
-		
-	}
+//	public ChessPiece[][] getPieces() {
+//		
+//	}
 
 }
