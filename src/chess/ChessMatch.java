@@ -93,6 +93,7 @@ public class ChessMatch {
 	private void initialSetup() {
 		board.placePeace(new Rook(board, Color.BLACK), new Position(3, 4));
 		board.placePeace(new King(board, Color.WHITE), new Position(2, 5));
+		board.placePeace(new King(board, Color.WHITE), new Position(3, 5));
 	}
 
 }
