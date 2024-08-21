@@ -1,7 +1,9 @@
 package application;
 
 import board.Board;
+import board.Position;
 import chess.ChessMatch;
+import chess.ChessPosition;
 import chess.UI;
 
 public class App {
@@ -13,7 +15,8 @@ public class App {
 		ChessMatch chessMatch = new ChessMatch();
 		UI.printBoard(chessMatch.getPieces());
 		
-		
+		ChessPosition chessPos = ChessPosition.fromPosition(new Position(0, 5));
+		System.out.println(chessPos);
 		
 
 	}

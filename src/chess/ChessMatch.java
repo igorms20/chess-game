@@ -90,10 +90,14 @@ public class ChessMatch {
 		return mat;
 	}
 
+	private void placeNewPiece(char column, int row, ChessPiece piece) {
+		Position pos = new ChessPosition(column, row).toPosition();
+		board.placePeace(piece, pos);
+	}
+
 	private void initialSetup() {
-		board.placePeace(new Rook(board, Color.BLACK), new Position(3, 4));
-		board.placePeace(new King(board, Color.WHITE), new Position(2, 5));
-		board.placePeace(new King(board, Color.WHITE), new Position(3, 5));
+		placeNewPiece('e', 5, new Rook(board, Color.BLACK));
+		placeNewPiece('f', 6, new King(board, Color.WHITE));
 	}
 
 }
