@@ -67,4 +67,8 @@ public class UI {
         System.out.print(" ");
 
     }
+
+    public static void clearScreen() {
+        System.out.print("\033[2J\033[H");
+    }
 }
