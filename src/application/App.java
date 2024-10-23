@@ -47,6 +47,9 @@ public class App {
 				System.out.println(e.getMessage());
 				sc.nextLine();
 			}
+			
+			UI.clearScreen();
+			UI.printMatch(chessMatch, capturedPieces);
 
 		}
 
